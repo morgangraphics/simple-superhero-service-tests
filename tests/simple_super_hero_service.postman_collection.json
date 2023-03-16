@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "9bdf737e-5e18-466e-8e15-ef15ea510e55",
+		"_postman_id": "4a7dcdba-e7d5-4cc3-b36d-6545a34b6c19",
 		"name": "simple super hero service",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -14,7 +14,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -22,7 +21,7 @@
 									"    pm.response.to.be.json;",
 									"});",
 									"",
-									"pm.test(\"first result is spiderman\", function () {",
+									"pm.test(\"first result is batman\", function () {",
 									"    const jsonData = pm.response.json();",
 									"    pm.expect(jsonData[0].name).to.eql('batman (bruce wayne)');",
 									"});",
@@ -112,7 +111,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -120,7 +118,7 @@
 									"    pm.response.to.be.json;",
 									"});",
 									"",
-									"pm.test(\"first result is spiderman\", function () {",
+									"pm.test(\"first result is batman\", function () {",
 									"    const jsonData = pm.response.json();",
 									"    pm.expect(jsonData[0].name).to.eql('batman (bruce wayne)');",
 									"});",
@@ -210,7 +208,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -218,7 +215,7 @@
 									"    pm.response.to.be.json;",
 									"});",
 									"",
-									"pm.test(\"first result is spiderman\", function () {",
+									"pm.test(\"first result is batman\", function () {",
 									"    const jsonData = pm.response.json();",
 									"    pm.expect(jsonData[0].name).to.eql('batman (bruce wayne)');",
 									"});",
@@ -229,7 +226,6 @@
 									"});",
 									"",
 									"pm.test(\"response object schema check\", function () {",
-									"    const jsonData = pm.response.json();",
 									"    const schema = {",
 									"        \"name\": \"string\",",
 									"        \"id\": \"string\",",
@@ -324,7 +320,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -420,7 +415,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -543,14 +537,12 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
 									"    pm.response.to.be.ok;",
 									"    pm.response.to.be.json;",
 									"});",
-									"",
 									"",
 									"pm.test(\"limit returns default of 100 results\", function () {",
 									"    const jsonData = pm.response.json();",
@@ -632,7 +624,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -640,9 +631,9 @@
 									"    pm.response.to.be.json;",
 									"});",
 									"",
-									"pm.test(\"first result is wolverine\", function () {",
+									"pm.test(\"first result is zzlrrrzzzm (new earth)\", function () {",
 									"    const jsonData = pm.response.json();",
-									"    pm.expect(jsonData[0].name).to.eql('superman (clark kent)');",
+									"    pm.expect(jsonData[0].name).to.eql('zzlrrrzzzm (new earth)');",
 									"});",
 									"",
 									"pm.test(\"limit returns 3 results\", function () {",
@@ -729,7 +720,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -737,9 +727,9 @@
 									"    pm.response.to.be.json;",
 									"});",
 									"",
-									"pm.test(\"first result is batman\", function () {",
+									"pm.test(\"first result is richard occult (new earth))\", function () {",
 									"    const jsonData = pm.response.json();",
-									"    pm.expect(jsonData[0].name).to.eql('batman (bruce wayne)');",
+									"    pm.expect(jsonData[0].name).to.eql('richard occult (new earth)');",
 									"});",
 									"",
 									"pm.test(\"response object all keys present\", function () {",
@@ -748,7 +738,6 @@
 									"});",
 									"",
 									"pm.test(\"response object schema check\", function () {",
-									"    const jsonData = pm.response.json();",
 									"    const schema = {",
 									"        \"name\": \"string\",",
 									"        \"alive\": \"string\",",
@@ -765,7 +754,6 @@
 									"",
 									"pm.test(\"sorting by year - second entry is less than or equal to first entry\", function () {",
 									"    const jsonData = pm.response.json();",
-									"    const years = jsonData.map(y => y.year).sort();",
 									"    pm.expect(jsonData[0].year).to.be.lte(jsonData[1].year);",
 									"});",
 									"",
@@ -795,7 +783,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://{{base_url}}/dc?h=name,alive,year&limit=10&s=year:asc",
+							"raw": "https://{{base_url}}/dc?h=name,alive,year&limit=10&s=year:asc&nulls=last",
 							"protocol": "https",
 							"host": [
 								"{{base_url}}"
@@ -833,13 +821,17 @@
 									"disabled": true
 								},
 								{
+									"key": "seed",
+									"value": "true",
+									"disabled": true
+								},
+								{
 									"key": "s",
 									"value": "year:asc"
 								},
 								{
-									"key": "seed",
-									"value": "true",
-									"disabled": true
+									"key": "nulls",
+									"value": "last"
 								}
 							]
 						}
@@ -852,7 +844,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "f25b498c-42c7-4b3b-a1b4-da2f3504b68a",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -877,9 +868,10 @@
 									"",
 									"pm.test(\"check for randomness round two - compare first and second tests\", function () {",
 									"    const url = `https://${pm.environment.get('base_url')}/dc?limit=50&random=true`;",
+									"    const test_resp = pm.globals.get('random_1');",
 									"    pm.sendRequest(url, function (err, response) {",
 									"        const jsonData = response.json();",
-									"        const pids0 = pm.globals.get('random_1').map(id => id.page_id);",
+									"        const pids0 = test_resp.map(id => id.page_id);",
 									"        const pids1 = jsonData.map(id => id.page_id);",
 									"        pm.expect(pids0).to.have.lengthOf(50);",
 									"        pm.expect(pids1).to.have.lengthOf(50);",
@@ -980,7 +972,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1079,12 +1070,11 @@
 					"response": []
 				},
 				{
-					"name": "/dc?h=name,id,align,hair,appearances&limit=50&s=align:des,name:ascc&nulls=last",
+					"name": "/dc?h=name,id,align,hair,appearances&limit=50&s=align:desc,name:asc&nulls=last",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1092,15 +1082,14 @@
 									"    pm.response.to.be.json;",
 									"});",
 									"",
-									"",
 									"pm.test(\"check first response alignment is not null\", function () {",
 									"    const jsonData = pm.response.json();",
-									"    pm.expect(jsonData[0].align).is.not.null;",
+									"    pm.expect(jsonData[0].align).is.eql('reformed criminals');",
 									"});",
 									"",
 									"pm.test(\"check lastst response alignment is null\", function () {",
 									"    const jsonData = pm.response.json();",
-									"    pm.expect(jsonData[jsonData.length-1].align).is.null;",
+									"   pm.expect(jsonData[jsonData.length-1].align).is.eql('neutral characters');",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1123,7 +1112,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://{{base_url}}/dc?h=name,id,align,hair,appearances&limit=50&nulls=last&s=align:des,name:ascc",
+							"raw": "https://{{base_url}}/dc?h=name,id,align,hair,appearances&limit=50&nulls=last&s=align:desc,name:asc",
 							"protocol": "https",
 							"host": [
 								"{{base_url}}"
@@ -1171,7 +1160,7 @@
 								},
 								{
 									"key": "s",
-									"value": "align:des,name:ascc"
+									"value": "align:desc,name:asc"
 								}
 							]
 						}
@@ -1179,19 +1168,17 @@
 					"response": []
 				},
 				{
-					"name": "/dc?h=name,id,align,hair,appearances&limit=50&s=align:des,name:asc",
+					"name": "/dc?h=name,id,align,hair,appearances&limit=50&s=align:desc,name:asc",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
 									"    pm.response.to.be.ok;",
 									"    pm.response.to.be.json;",
 									"});",
-									"",
 									"",
 									"pm.test(\"check first response alignment is null\", function () {",
 									"    const jsonData = pm.response.json();",
@@ -1223,7 +1210,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://{{base_url}}/dc?h=name,id,align,hair,appearances&limit=50&s=align:des,name:asc",
+							"raw": "https://{{base_url}}/dc?h=name,id,align,hair,appearances&s=align:desc,name:asc&limit=2000",
 							"protocol": "https",
 							"host": [
 								"{{base_url}}"
@@ -1262,20 +1249,19 @@
 									"value": "name,id,align,hair,appearances"
 								},
 								{
-									"key": "limit",
-									"value": "50"
+									"key": "s",
+									"value": "align:desc,name:asc"
 								},
 								{
-									"key": "s",
-									"value": "align:des,name:asc"
+									"key": "limit",
+									"value": "2000"
 								}
 							]
 						}
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "getDCCharacter",
@@ -1286,7 +1272,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1388,7 +1373,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1496,7 +1480,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1508,7 +1491,6 @@
 									"    const jsonData = pm.response.json();",
 									"    pm.expect(jsonData[0].name).to.eql('bizarro green lantern (new earth)');",
 									"});",
-									"",
 									"",
 									"pm.test(\"response object schema check\", function () {",
 									"    const jsonData = pm.response.json();",
@@ -1602,7 +1584,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1704,7 +1685,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1805,7 +1785,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1814,7 +1793,6 @@
 									"});",
 									"",
 									"pm.test(\"response object schema check\", function () {",
-									"    const jsonData = pm.response.json();",
 									"    const schema = {",
 									"        \"name\": \"string\",",
 									"        \"first appearance\": \"string\",",
@@ -1913,7 +1891,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -1927,7 +1904,6 @@
 									"});",
 									"",
 									"pm.test(\"response object schema check\", function () {",
-									"    const jsonData = pm.response.json();",
 									"    const schema = {",
 									"        \"name\": \"string\",",
 									"        \"first appearance\": \"string\",",
@@ -2032,7 +2008,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -2133,7 +2108,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "fe53a192-2d7e-46fa-8a67-b4ef19bf8e8e",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -2145,7 +2119,6 @@
 									"    const jsonData = pm.response.json();",
 									"    pm.expect(jsonData[0].name).to.eql('hannibal bates (new earth)');",
 									"});",
-									"",
 									"",
 									"pm.test(\"response object schema check\", function () {",
 									"    const jsonData = pm.response.json();",
@@ -2205,7 +2178,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "a294fda7-c393-4296-9879-9936103d4299",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -2218,7 +2190,6 @@
 									"    pm.expect(jsonData[0].name).to.eql('hannibal bates (new earth)');",
 									"});",
 									"",
-									"",
 									"pm.test(\"response object schema check\", function () {",
 									"    const jsonData = pm.response.json();",
 									"    const schema = {",
@@ -2229,7 +2200,6 @@
 									"    pm.expect(jsonData[0]).to.be.an('object').that.has.all.keys('name', 'align', 'appearances');",
 									"    pm.response.to.have.jsonSchema(schema);",
 									"});",
-									"",
 									"",
 									"pm.test(\"limit returns 1 results\", function () {",
 									"    const jsonData = pm.response.json();",
@@ -2274,14 +2244,12 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
 									"    pm.response.to.be.ok;",
 									"    pm.response.to.be.json;",
 									"});",
-									"",
 									"",
 									"pm.test(\"check first response id is not null\", function () {",
 									"    const jsonData = pm.response.json();",
@@ -2365,8 +2333,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "postDC",
@@ -2377,7 +2344,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -2433,7 +2399,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -2497,7 +2462,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -2561,7 +2525,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -2629,7 +2592,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -2641,7 +2603,6 @@
 									"    const jsonData = pm.response.json();",
 									"    pm.expect(jsonData[0].name).to.eql('batman (bruce wayne)');",
 									"});",
-									"",
 									"",
 									"pm.test(\"response object schema check\", function () {",
 									"    const jsonData = pm.response.json();",
@@ -2697,7 +2658,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -2759,7 +2719,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -2811,14 +2770,12 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
 									"    pm.response.to.be.ok;",
 									"    pm.response.to.be.json;",
 									"});",
-									"",
 									"",
 									"pm.test(\"check all results contain bat AND man OR super\", function () {",
 									"    const jsonData = pm.response.json();",
@@ -2829,9 +2786,6 @@
 									"        );",
 									"    });",
 									"});",
-									"",
-									"",
-									"",
 									""
 								],
 								"type": "text/javascript"
@@ -2870,7 +2824,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -2932,7 +2885,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -2994,7 +2946,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -3016,8 +2967,6 @@
 									"        );",
 									"    });",
 									"});",
-									"",
-									"",
 									""
 								],
 								"type": "text/javascript"
@@ -3056,7 +3005,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -3125,7 +3073,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -3160,7 +3107,7 @@
 									"    });",
 									"});",
 									"",
-									"pm.test(\"check sort order for year 1963\", function () {",
+									"pm.test(\"check sort order for year 1966\", function () {",
 									"    const jsonData = pm.response.json();",
 									"    const sorted = jsonData.filter(x => x.year === 1966);",
 									"    pm.expect(sorted[0].year).to.be.eql(sorted[1].year);",
@@ -3232,7 +3179,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -3242,7 +3188,7 @@
 									"",
 									"pm.test(\"response object all keys present check\", function () {",
 									"    const jsonData = pm.response.json();",
-									"    pm.expect(jsonData[1]).to.be.an('object').that.has.all.keys('name', 'appearances', 'first appearance', 'sex', 'year');",
+									"    pm.expect(jsonData[2]).to.be.an('object').that.has.all.keys('name', 'appearances', 'first appearance', 'sex', 'year');",
 									"});",
 									"",
 									"pm.test(\"response object schema check\", function () {",
@@ -3267,7 +3213,7 @@
 									"    });",
 									"});",
 									"",
-									"pm.test(\"check sort order for year 1963\", function () {",
+									"pm.test(\"check sort order for year 1966\", function () {",
 									"    const jsonData = pm.response.json();",
 									"    const sorted = jsonData.filter(x => x.year === 1966);",
 									"    pm.expect(sorted[0].year).to.be.eql(sorted[1].year);",
@@ -3339,7 +3285,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -3380,7 +3325,7 @@
 									"    });",
 									"});",
 									"",
-									"pm.test(\"check sort order for year 1963\", function () {",
+									"pm.test(\"check sort order for year 1966\", function () {",
 									"    const jsonData = pm.response.json();",
 									"    const sorted = jsonData.filter(x => x.year === 1966);",
 									"    pm.expect(sorted[0].year).to.be.eql(sorted[1].year);",
@@ -3446,8 +3391,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "getMarvel",
@@ -3458,7 +3402,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -3556,7 +3499,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -3654,7 +3596,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -3768,7 +3709,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -3864,7 +3804,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -3877,7 +3816,6 @@
 									"    pm.expect(jsonData[1].name).to.eql('captain america (steven rogers)');",
 									"});",
 									"",
-									"",
 									"pm.test(\"response object all keys present\", function () {",
 									"    const jsonData = pm.response.json();",
 									"    pm.expect(jsonData[1]).to.be.an('object').that.has.all.keys('name', 'page_id', 'urlslug', 'id', 'align', 'eye', 'hair', 'sex',",
@@ -3885,7 +3823,6 @@
 									"});",
 									"",
 									"pm.test(\"response object schema check\", function () {",
-									"    const jsonData = pm.response.json();",
 									"    const schema = {",
 									"        \"page_id\": \"integer\",",
 									"        \"name\": \"string\",",
@@ -3987,7 +3924,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -4076,7 +4012,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -4086,7 +4021,7 @@
 									"",
 									"pm.test(\"first result is wolverine\", function () {",
 									"    const jsonData = pm.response.json();",
-									"    pm.expect(jsonData[0].name).to.eql('wolverine (james \\\"logan\\\" howlett)');",
+									"    pm.expect(jsonData[0].name).to.eql('zzzax (earth-616)');",
 									"});",
 									"",
 									"pm.test(\"limit returns 3 results\", function () {",
@@ -4173,7 +4108,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -4181,9 +4115,9 @@
 									"    pm.response.to.be.json;",
 									"});",
 									"",
-									"pm.test(\"first result is captain america\", function () {",
+									"pm.test(\"first result is namor mckenzie (earth-616)\", function () {",
 									"    const jsonData = pm.response.json();",
-									"    pm.expect(jsonData[0].name).to.eql('captain america (steven rogers)');",
+									"    pm.expect(jsonData[0].name).to.eql('namor mckenzie (earth-616)');",
 									"});",
 									"",
 									"pm.test(\"response object all keys present\", function () {",
@@ -4192,7 +4126,6 @@
 									"});",
 									"",
 									"pm.test(\"response object schema check\", function () {",
-									"    const jsonData = pm.response.json();",
 									"    const schema = {",
 									"        \"name\": \"string\",",
 									"        \"appearances\": \"integer\",",
@@ -4207,10 +4140,9 @@
 									"    pm.expect(jsonData[0].year).to.eql(years[0]);",
 									"});",
 									"",
-									"pm.test(\"sorting by year - second entry is less than or equal to first entry\", function () {",
+									"pm.test(\"sorting by appearances - second entry is greater than or equal to first entry\", function () {",
 									"    const jsonData = pm.response.json();",
-									"    const years = jsonData.map(y => y.year).sort();",
-									"    pm.expect(jsonData[0].year).to.be.lte(jsonData[1].year);",
+									"    pm.expect(jsonData[0].appearances).to.be.gte(jsonData[1].appearances);",
 									"});",
 									"",
 									"pm.test(\"limit returns 10 results\", function () {",
@@ -4254,17 +4186,9 @@
 									"disabled": true
 								},
 								{
-									"key": "h",
-									"value": "name,appearances,year"
-								},
-								{
 									"key": "help",
 									"value": "true",
 									"disabled": true
-								},
-								{
-									"key": "limit",
-									"value": "10"
 								},
 								{
 									"key": "pretty",
@@ -4277,13 +4201,21 @@
 									"disabled": true
 								},
 								{
-									"key": "s",
-									"value": "year:asc"
-								},
-								{
 									"key": "seed",
 									"value": "true",
 									"disabled": true
+								},
+								{
+									"key": "h",
+									"value": "name,appearances,year"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "s",
+									"value": "year:asc"
 								}
 							]
 						}
@@ -4296,7 +4228,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "f25b498c-42c7-4b3b-a1b4-da2f3504b68a",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -4306,7 +4237,6 @@
 									"",
 									"pm.test(\"limit returns 50 random results\", function () {",
 									"    const jsonData = pm.response.json();",
-									"    console.log('setting randome 1 = ', jsonData)",
 									"    pm.globals.set(\"random_1\", jsonData);",
 									"    pm.expect(jsonData).to.have.lengthOf(50);",
 									"});",
@@ -4322,7 +4252,6 @@
 									"",
 									"pm.test(\"check for randomness round two - compare first and second tests\", function () {",
 									"    const url = `https://${pm.environment.get('base_url')}/marvel?limit=50&random=true`;",
-									"    console.log(\"getting randome 1 0  = \", pm.globals.get('random_1'))",
 									"    random_1 = pm.globals.get('random_1')",
 									"    pm.sendRequest(url, function (err, response) {",
 									"        const jsonData = response.json();",
@@ -4428,7 +4357,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -4528,12 +4456,11 @@
 					"response": []
 				},
 				{
-					"name": "/marvel?h=name,id,align,hair,appearances&limit=1000&s=align:des,name:ascc&nulls=last",
+					"name": "/marvel?h=name,id,align,hair,appearances&limit=1000&s=align:desc,name:asc&nulls=last",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -4541,15 +4468,14 @@
 									"    pm.response.to.be.json;",
 									"});",
 									"",
-									"",
 									"pm.test(\"check first response alignment is not null\", function () {",
 									"    const jsonData = pm.response.json();",
 									"    pm.expect(jsonData[0].align).is.not.null;",
 									"});",
 									"",
-									"pm.test(\"check lastst response alignment is null\", function () {",
+									"pm.test(\"check sort on align has nulls last\", function () {",
 									"    const jsonData = pm.response.json();",
-									"    pm.expect(jsonData[jsonData.length-1].align).is.null;",
+									"    pm.expect(jsonData[jsonData.length-1].align).to.null",
 									"});"
 								],
 								"type": "text/javascript"
@@ -4572,7 +4498,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://{{base_url}}/marvel?h=name,id,align,hair,appearances&nulls=last&s=align:des,name:ascc&limit=1000",
+							"raw": "https://{{base_url}}/marvel?h=name,id,align,hair,appearances&nulls=last&s=align:desc,name:asc&limit=0",
 							"protocol": "https",
 							"host": [
 								"{{base_url}}"
@@ -4616,11 +4542,11 @@
 								},
 								{
 									"key": "s",
-									"value": "align:des,name:ascc"
+									"value": "align:desc,name:asc"
 								},
 								{
 									"key": "limit",
-									"value": "1000"
+									"value": "0"
 								}
 							]
 						}
@@ -4628,19 +4554,17 @@
 					"response": []
 				},
 				{
-					"name": "/marvel?h=name,id,align,hair,appearances&limit=1000&s=align:des,name:asc nulls first",
+					"name": "/marvel?h=name,id,align,hair,appearances&limit=3500&s=align:desc,name:asc&nulls=first",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
 									"    pm.response.to.be.ok;",
 									"    pm.response.to.be.json;",
 									"});",
-									"",
 									"",
 									"pm.test(\"check first response alignment is null\", function () {",
 									"    const jsonData = pm.response.json();",
@@ -4672,7 +4596,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://{{base_url}}/marvel?h=name,id,align,hair,appearances&s=align:des,name:asc&limit=1000",
+							"raw": "https://{{base_url}}/marvel?h=name,id,align,hair,appearances&s=align:desc,name:asc&limit=3500",
 							"protocol": "https",
 							"host": [
 								"{{base_url}}"
@@ -4712,19 +4636,18 @@
 								},
 								{
 									"key": "s",
-									"value": "align:des,name:asc"
+									"value": "align:desc,name:asc"
 								},
 								{
 									"key": "limit",
-									"value": "1000"
+									"value": "3500"
 								}
 							]
 						}
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "getMarvelCharacter",
@@ -4735,7 +4658,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -4837,7 +4759,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -4945,7 +4866,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -5051,7 +4971,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -5152,7 +5071,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -5254,7 +5172,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -5362,7 +5279,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -5480,7 +5396,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -5582,7 +5497,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "fe53a192-2d7e-46fa-8a67-b4ef19bf8e8e",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -5654,7 +5568,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "fe53a192-2d7e-46fa-8a67-b4ef19bf8e8e",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -5722,7 +5635,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -5813,8 +5725,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "postMarvel",
@@ -5825,7 +5736,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -5881,7 +5791,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -5945,7 +5854,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -6009,7 +5917,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -6021,7 +5928,6 @@
 									"    const jsonData = pm.response.json();",
 									"    pm.expect(jsonData[0].name).to.eql('iron man (anthony \\\"tony\\\" stark)');",
 									"});",
-									"",
 									"",
 									"pm.test(\"response object schema check\", function () {",
 									"    const jsonData = pm.response.json();",
@@ -6077,7 +5983,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -6089,7 +5994,6 @@
 									"    const jsonData = pm.response.json();",
 									"    pm.expect(jsonData[0].name).to.eql('iron man (anthony \\\"tony\\\" stark)');",
 									"});",
-									"",
 									"",
 									"pm.test(\"response object schema check\", function () {",
 									"    const jsonData = pm.response.json();",
@@ -6145,7 +6049,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -6207,7 +6110,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -6259,14 +6161,12 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
 									"    pm.response.to.be.ok;",
 									"    pm.response.to.be.json;",
 									"});",
-									"",
 									"",
 									"pm.test(\"check all results contain spider AND man OR Aqua\", function () {",
 									"    const jsonData = pm.response.json();",
@@ -6318,7 +6218,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -6380,7 +6279,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -6442,7 +6340,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -6504,7 +6401,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -6513,7 +6409,6 @@
 									"});",
 									"",
 									"pm.test(\"response object schema check\", function () {",
-									"    const jsonData = pm.response.json();",
 									"    const schema = {",
 									"        \"name\": \"string\",",
 									"        \"first appearance\": \"string\",",
@@ -6573,7 +6468,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -6587,7 +6481,6 @@
 									"});",
 									"",
 									"pm.test(\"response object schema check\", function () {",
-									"    const jsonData = pm.response.json();",
 									"    const schema = {",
 									"        \"name\": \"string\",",
 									"        \"first appearance\": \"string\",",
@@ -6680,7 +6573,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -6699,7 +6591,6 @@
 									"});",
 									"",
 									"pm.test(\"response object schema check\", function () {",
-									"    const jsonData = pm.response.json();",
 									"    const schema = {",
 									"        \"name\": \"string\",",
 									"        \"first appearance\": \"string\",",
@@ -6721,9 +6612,9 @@
 									"    });",
 									"});",
 									"",
-									"pm.test(\"check sort order for year 1963\", function () {",
+									"pm.test(\"check sort order for year 1964\", function () {",
 									"    const jsonData = pm.response.json();",
-									"    const sorted = jsonData.filter(x => x.year === 1966);",
+									"    const sorted = jsonData.filter(x => x.year === 1964);",
 									"    pm.expect(sorted[0].year).to.be.eql(sorted[1].year);",
 									"    pm.expect(sorted[0].appearances).to.be.gte(sorted[1].appearances);",
 									"});",
@@ -6793,7 +6684,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -6803,11 +6693,10 @@
 									"",
 									"pm.test(\"response object all keys present check\", function () {",
 									"    const jsonData = pm.response.json();",
-									"    pm.expect(jsonData[1]).to.be.an('object').that.has.all.keys('name', 'appearances', 'first appearance', 'sex', 'year');",
+									"    pm.expect(jsonData[jsonData.length-1]).to.be.an('object').that.has.all.keys('name', 'appearances', 'first appearance', 'sex', 'year');",
 									"});",
 									"",
 									"pm.test(\"response object schema check\", function () {",
-									"    const jsonData = pm.response.json();",
 									"    const schema = {",
 									"        \"name\": \"string\",",
 									"        \"first appearance\": \"string\",",
@@ -6828,9 +6717,9 @@
 									"    });",
 									"});",
 									"",
-									"pm.test(\"check sort order for year 1963\", function () {",
+									"pm.test(\"check sort order for year 1964\", function () {",
 									"    const jsonData = pm.response.json();",
-									"    const sorted = jsonData.filter(x => x.year === 1966);",
+									"    const sorted = jsonData.filter(x => x.year === 1964);",
 									"    pm.expect(sorted[0].year).to.be.eql(sorted[1].year);",
 									"    pm.expect(sorted[0].appearances).to.be.gte(sorted[1].appearances);",
 									"});",
@@ -6894,8 +6783,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "healthcheck",
@@ -6906,7 +6794,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c0d79958-bf3a-428b-975b-657354987a80",
 								"exec": [
 									"pm.test(\"Status\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -6977,9 +6864,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
